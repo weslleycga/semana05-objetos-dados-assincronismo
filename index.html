@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objetos, Dados e Assincronismo - Semana 05</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 640px; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; }
+    section { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; }
+    .status { min-height: 1.5em; font-weight: bold; }
+    .status.erro { color: #b00020; }
+    .status.vazio { color: #a86400; }
+    dt { font-weight: bold; margin-top: 0.5rem; }
+    dd { margin: 0; }
+    img { image-rendering: pixelated; width: 128px; height: 128px; }
+    ul { padding-left: 1.2rem; }
+  </style>
+</head>
+<body>
+  <h1>Semana 05 – Objetos, Dados e Assincronismo</h1>
+
+  <section>
+    <h2>Parte 1 – Pedidos</h2>
+    <p>Resultados também no Console (F12).</p>
+    <ul id="resultado-pedidos"></ul>
+    <p id="total-pedidos"></p>
+  </section>
+
+  <section>
+    <h2>Parte 2 – Buscador de CEP</h2>
+    <form id="form-cep">
+      <input type="text" id="cep" placeholder="Digite o CEP (8 dígitos)" maxlength="12" autocomplete="off">
+      <button type="submit" id="btn-cep">Buscar</button>
+    </form>
+    <p id="status-cep" class="status" role="status"></p>
+    <dl id="resultado-cep"></dl>
+    <h3>Histórico</h3>
+    <ul id="historico-cep"></ul>
+  </section>
+
+  <section>
+    <h2>Parte 3 – Mini Pokédex</h2>
+    <form id="form-pokemon">
+      <input type="text" id="pokemon" placeholder="Nome do Pokémon (ex.: pikachu)" autocomplete="off">
+      <button type="submit" id="btn-pokemon">Buscar</button>
+    </form>
+    <p id="status-pokemon" class="status" role="status"></p>
+    <div id="resultado-pokemon"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
